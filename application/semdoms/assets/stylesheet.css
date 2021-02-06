@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+/* Zero out some problems */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* On to the rest of the style */
+/* Mobile first */
+body {
+    font-family: Quicksand;
+    }
+
+.grid-container {
+    display: block;
+}
+
+    .left-container {
+        background-color: #df9fdf;
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+
+        .input-container {
+            background-color: #1d3557;
+            padding: 2px;
+            line-height: 50%;
+        }
+
+            .radio-buttons {
+                color: white;
+            }
+
+            .input-label {
+                margin: 0px;
+                padding: 0px;
+                line-height: 100%;
+                color: white;
+            }
+
+        .info-container {
+            background-color: #457b9d;
+            padding: 2px;
+            color: white;
+            display: none;
+        }
+
+    .center-container {
+        display: block;
+        height: auto;
+    }
+
+        .graph-title {
+            text-align: center;
+        }
+
+        .graph-box {
+            margin: 0px;
+            height: auto;
+        }
+
+    .right-container {
+
+    }
+
+        .right-box {
+            background-color: #457b9d;
+            padding: 2px;
+            text-align: center;
+            color: white;
+            border-top: solid 1px white;
+        }
+
+        .sense-box {
+            background-color: #457b9d;
+            padding: 2px;
+            text-align: left;
+            color: white;
+            border-top: solid 1px white;
+        }
+
+        .mobile-info {
+            background-color: #457b9d;
+            padding: 2px;
+            text-align: left;
+            color: white;
+            border-top: solid 1px white;
+        }
+
+            .info-head {
+                text-align: center;
+            }
+
+.ss {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+a {
+    color: #f1faee;
+}
+
+b {
+    font-weight: bold;
+}
+
+h1 {
+    font-size:2.5em;
+}
+
+    .info-head{
+        margin-bottom: 10px;
+    }
+
+h2 {
+    font-size:2em;
+}
+
+h3 {
+    font-size:1.6em;
+}
+
+h4 {
+    font-size:1.5em;
+}
+
+h5 {
+    font-size: 1.1em;
+}
+
+/* iPad Horizontal Size */
+@media only screen and (min-width: 1025px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 250px minmax(200px,1fr) 250px;
+    }
+
+    .left-container {
+        background-color: #df9fdf;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: auto minmax(200px,1fr);
+    }
+
+            .input-container {
+            background-color: #1d3557;
+            padding: 10px;
+            line-height: 50%;
+        }
+
+            .input-label {
+                margin: 0px;
+                padding: 0px;
+                line-height: 100%;
+                color: white;
+            }
+
+        .info-container {
+            background-color: #457b9d;
+            padding: 10px;
+            overflow-y: scroll;
+            color: white;
+            display: inline;
+        }
+
+    .center-container {
+        display: grid;
+        grid-template-rows: auto minmax(200px, 1fr);
+        height: 100vh;
+        margin: 0px;
+    }
+
+        .graph-title {
+            padding: 10px;
+            font-size: 2.5em;
+        }
+
+        .graph-box {
+            margin: 0px;
+            height: 100%;
+        }
+
+    .right-container {
+        height: 100vh;
+        display: grid;
+        align-items: center;
+        overflow: auto;
+    }
+        .pronunciation{
+            text-size:0.8em;
+        }
+        .right-box {
+            background-color: #457b9d;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .sense-box {
+            background-color: #457b9d;
+            padding: 10px;
+            text-align: left;
+            color: white;
+        }
+
+        .mobile-info {
+            display: none;
+        }
+    }
+
+/* Full-Sized */
+@media only screen and (min-width: 1400px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 250px minmax(200px,1fr) 400px;
+    }
+
+    .left-container {
+        background-color: #df9fdf;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: auto minmax(200px,1fr);
+    }
+
+            .input-container {
+            background-color: #1d3557;
+            padding: 10px;
+            line-height: 50%;
+        }
+
+            .input-label {
+                margin: 0px;
+                padding: 0px;
+                line-height: 100%;
+                color: white;
+            }
+
+        .info-container {
+            background-color: #457b9d;
+            padding: 10px;
+            overflow-y: scroll;
+            color: white;
+            display: inline;
+        }
+
+    .center-container {
+        display: grid;
+        grid-template-rows: auto minmax(200px, 1fr);
+        height: 100vh;
+        margin: 0px;
+    }
+
+        .graph-title {
+            padding: 10px;
+            font-size: 2.5em;
+        }
+
+        .graph-box {
+            margin: 0px;
+            height: 100%;
+        }
+
+    .right-container {
+        height: 100vh;
+        display: grid;
+        align-items: center;
+        overflow: auto;
+    }
+
+        .right-box {
+            background-color: #457b9d;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .sense-box {
+            background-color: #457b9d;
+            padding: 10px;
+            text-align: left;
+            color: white;
+        }
+
+        .mobile-info {
+            display: none;
+        }
+    }
