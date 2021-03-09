@@ -1,0 +1,421 @@
+@use "reset"
+
+/* Color Variables */
+
+$black:         #40424a
+$dark-blue:     #30475e
+$light-blue:    #ececec
+$white:         #dfe8e9
+$gold:          #c1a57b
+
+/* Mixins */
+
+@mixin reset-underline
+    margin: 0
+
+
+/* When Screen Width is Less Than 600px */
+
+a
+    color: $gold
+
+body
+    line-height: 1
+    font-family: 'Josefin Sans'
+    display: grid
+    grid-template-rows: auto auto auto
+    margin: 0px 3px
+
+h1, h2, h3, h4, h5, ul, li
+    color: $black
+    font-weight: 600
+
+h1, h3, ul, li
+    font-size: 4.5vw
+    margin: 5px 0px
+
+h2
+    font-size: 5.5vw
+    margin-top: 20px
+
+h5
+    font-size: 1.5em
+    margin: 30px 5px
+    color: $black
+
+img
+    max-width: 100%
+    max-height: 100%
+
+li
+    margin: 10px 5px
+
+ul
+    list-style-type: disc
+    margin-left: 30px
+
+.btn
+    color: #fff
+    background: $dark-blue
+    border: none
+    padding: 5px
+    font-size: 1em
+    font-family: 'Josefin Sans'
+    font-weight: 600
+
+.coding-projects-underline
+    @include reset-underline
+    width: 42%
+
+.column
+    display: contents
+
+.education-underline
+    @include reset-underline
+    width: 27%
+
+.fake-h4
+    font-size: 0.7em
+
+.gen-info-underline
+    @include reset-underline
+    width: 33%
+
+.grid-icon-container
+    display: none
+
+.last-li-item
+    margin-bottom: -5px
+
+.location
+    font-size: 4vw
+    font-style: italic
+
+.mabl
+    margin-top: 20px
+
+.mobile-one
+    grid-row: 1/2
+
+.mobile-two
+    grid-row: 2/3
+
+.mobile-three
+    grid-row: 3/4
+
+.name
+    font-size: 7vw
+    margin: 10px 0px
+
+.no-mobile-block
+    display: none
+
+.other-interests-underline
+    @include reset-underline
+    width: 40%
+
+.proficiencies-underline
+    @include reset-underline
+    width: 33%
+
+.right
+    float: right
+
+.soft-skills-underline
+    @include reset-underline
+    width: 26%
+
+.thesis
+    font-size: 4vw
+    color: $gold
+
+.work-underline
+    @include reset-underline
+    width: 45%
+
+
+@media only screen and (min-width: 600px)
+
+    body
+        display: grid
+        grid-template-columns: 3fr 5fr
+        grid-gap: 0em
+        grid-auto-rows: 1fr
+
+    h1
+        font-size: 3.5vw
+        margin: 1rem 0rem 0rem 0rem
+
+    h2
+        font-size: 3vw
+
+    h3, ul, li
+        font-size: 2vw
+        margin: 5px 0px
+
+    h5
+        font-size: 1.5vw
+        margin: 30px 5px
+        color: $black
+
+    hr
+        text-align: left
+        margin-left: 0
+        border-top: 1px solid $black
+
+    ul
+        list-style-type: disc
+        margin-left: 30px
+
+    li
+        margin: 10px 5px
+
+    .btn
+        width: 7vw
+        color: $white
+        background: $dark-blue
+        border: none
+        font-size:1.2vw
+        padding: 10px
+        cursor: pointer
+
+    .button-holder
+        width: 15vw
+        text-align: right
+
+    .column
+        display: block
+        padding: 2vw
+
+    .column-left
+        background: $light-blue
+        height: 100%
+
+    .column-right
+        background: white
+
+    .fake-h4
+        font-size: 0.5em
+
+    .gen-info-underline
+        @include reset-underline
+        width: 52%
+
+    .general-info-columns
+        display: grid
+        grid-template-columns: 1.2fr 3fr
+
+    .grid-icon-container
+        display: grid
+        padding-bottom: 1.2rem
+        grid-template-rows: auto auto auto
+        justify-content: space-evenly
+        align-items: center
+
+    .grid-name-container
+        display: grid
+        grid-template-columns: 5fr 1fr
+        margin-top: 1.2rem
+
+    .icon-links
+        font-size: 2vw
+        color: $dark-blue
+
+    .image-container
+        width: auto
+
+    .last-li-item
+        margin-bottom: 0px
+
+    .location
+        font-size: 2vw
+
+    .mobile-only-block
+        display: none
+
+    .name
+        font-size: 5vw
+
+    .no-dip-underline
+        margin-top:0px
+        margin-bottom: 20px
+
+    .no-mobile-block
+        display: block
+
+    .other-interests-underline
+        @include reset-underline
+        width: 63%
+
+    .proficiencies-underline
+        @include reset-underline
+        width: 51%
+
+    .project-links
+        color: $gold
+
+    .right
+        float: right
+
+    .section-title
+        width: 50%
+        text-decoration: none
+        border-width: 0 0 1px
+        border-style: solid
+        margin-bottom: 20px
+
+    .soft-skills-underline
+        @include reset-underline
+        width: 41%
+
+    .sub-head
+        margin-top: 2rem
+
+    .subtitle
+        display: block
+        color: $black
+        margin: 10px 0px
+        font-size: 3vw
+
+    .thesis
+        color:$gold
+        font-size: 2vw
+
+    .top-right
+        float: right
+
+    .underline
+        width: 40%
+
+
+@media only screen and (min-width: 1600px) 
+
+    h1
+        font-size: 3.8rem
+        margin: 50px 0px 10px 0px
+
+    h2
+        font-size: 3em
+
+    h3
+        font-size: 2em
+        margin: 5px 0px
+
+    h5
+        font-size: 1.5em
+        margin: 30px 5px
+        color: $black
+
+    hr
+        text-align: left
+        margin-left: 0
+        border-top: 1px solid $black
+
+    .btn
+        width: 100px
+        color: $white
+        background: $dark-blue
+        font-size:1.2em
+        border: none
+        padding: 10px
+        cursor: pointer
+
+    .button-holder
+        width: 350px
+        text-align: right
+
+    .column
+        display: block
+        padding: 30px
+
+    .column-left
+        background: $light-blue
+        height: 100%
+
+    .column-right
+        background: white
+
+    .fake-h4
+        font-size: 0.5em
+
+    .general-info-columns
+        display: grid
+        grid-template-columns: 1fr 3fr
+
+    .gen-info-underline
+        @include reset-underline
+        width: 43%
+
+    .grid-container
+        display: grid
+        grid-template-columns: 3fr 5fr
+        grid-gap: 0em
+
+    .grid-icon-container
+        display: grid
+        padding-bottom: 1.2rem
+        grid-template-rows: 1fr 1fr 1fr
+        align-items: center
+
+    .grid-name-container
+        display: grid
+        grid-template-columns: 5fr 1fr
+
+    .icon-links
+        font-size: 2em
+
+    .image-container
+        width: auto
+
+    .left-col-underline
+        width: 45%
+
+    .margin
+        margin: 70px 0px 0px 0px
+
+    .mobile-only-block
+        display: none
+
+    .name
+        font-size: 5rem
+
+    .no-dip-underline
+        margin-top:0px
+        margin-bottom: 20px
+
+    .no-mobile-block
+        display: block
+
+    .proficiencies-underline
+        @include reset-underline
+        width: 42%
+
+    .project-links
+        color: $gold
+
+    .right
+        float: right
+
+    .section-title
+        width: 50%
+        text-decoration: none
+        border-width: 0 0 1px
+        border-style: solid
+        margin-bottom: 20px
+
+    .sub-head
+        margin-top: 80px
+
+    .subtitle
+        display: block
+        color: $black
+        margin: 10px 3px
+
+    .thesis
+        color:$gold
+
+    .top-right
+        float: right
+
+    .underline
+        width: 33%

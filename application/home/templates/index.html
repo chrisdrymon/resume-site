@@ -19,143 +19,122 @@
     <link rel="manifest" href="{{ url_for('home_bp.static', filename='site.webmanifest') }}">
 </head>
 <body>
-    <div class="grid-container">
-        <div class="column column-left">
-            <div class="mobile-one">
-                <div class='image-container'>
-                    <img src="{{ url_for('home_bp.static', filename='XRS_7899.jpg') }}" alt="Chris">
-                </div>
-                <div class='grid-name-container'>
-                    <h1 class="name top">Chris<br>Drymon</h1>
-                    <div class="grid-icon-container">
-                        <div class='right button-holder'><a href="{{ url_for('home_bp.static', filename='DrymonResume.pdf') }}"><button class="btn">PDF<i class="fa fa-download"></i></button></a>
-                            <a href="{{ url_for('home_bp.static', filename='DrymonResume.docx') }}"><button class="btn">Doc <i class="fa fa-download"></i></button></a></div>
-                        <div><a href="https://www.linkedin.com/in/chrisdrymon/" target="_blank"><i class="fa fa-linkedin icon-links right" aria-hidden="true"></i></a></div>
-                        <div><a href="https://github.com/chrisdrymon" target="_blank"><i class="fa fa-github icon-links right" aria-hidden="true"></i></a></div>
-                    </div>
-                </div>
-                <h3 class='subtitle'>Software Engineer</h3>
-                <div class='mobile-only-block'><a href="{{ url_for('home_bp.static', filename='DrymonResume.pdf') }}"><button class="btn top-right">PDF <i class="fa fa-download"></i></button></a>
-                                               <a href="{{ url_for('home_bp.static', filename='DrymonResume.docx') }}"><button class="btn top-right">Doc <i class="fa fa-download"></i></button></a></div>
-                <h2 class='margin'>General Info</h2>
-                <hr class="left-col-underline no-dip-underline"/>
-                <div class='general-info-columns'>
-                    <h3 class='no-mobile-block'>Location</h3><h3>Kansas City, MO</h3>
-                    <h3 class='no-mobile-block'>E-Mail</h3><h3>chrisdrymon@yahoo.com</h3>
-                    <h3 class='no-mobile-block'>Phone</h3><h3>205.394.9808</h3>
-                    <h3 class='mobile-only-block'><a href="https://www.linkedin.com/in/chrisdrymon/" target="_blank">LinkedIn</a></h3>
-                    <h3 class='mobile-only-block'><a href="https://github.com/chrisdrymon" target="_blank">GitHub</a></h3>
-                </div>
-                <h2 class="sub-head margin">Proficiencies</h2>
-                <hr class="left-col-underline no-dip-underline"/>
-                <h3>Python
-                    <ul>
-                        <li>Data Structures</li>
-                        <li>Algorithms</li>
-                    </ul>
-                    Natural Language Processing
-                    <ul>
-                        <li>Classical Language Toolkit</li>
-                        <li>Natural Language Toolkit</li>
-                        <li>Gensim</li>
-                        <li>Stanza</li>
-                        <li>SpaCy</li>
-                    </ul>
-                    Machine Learning
-                    <ul>
-                        <li>Tensorflow</li>
-                        <li>Keras API</li>
-                        <li>Estimator API</li>
-                    </ul>
-                    Data Processing
-                    <ul>
-                        <li>NumPy</li>
-                        <li>Pandas</li>
-                    </ul>
-                    Data Visualization
-                    <ul>
-                        <li>Plotly</li>
-                        <li>Dash</li>
-                    </ul>
-                    Web Development
-                    <ul>
-                        <li>Flask</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </h3>
+    <div class="column column-left">
+        <div class="mobile-one">
+            <div class='image-container'>
+                <img src="{{ url_for('home_bp.static', filename='XRS_7899.jpg') }}" alt="Chris">
             </div>
-            <div class="mobile-three">
-                <h2 class='margin'>Soft Skills</h2>
-                <hr class="left-col-underline no-dip-underline"/>
-                <h3>
-                <ul>
-                    <li>Leadership Experience</li>
-                    <li>Problem-Solving</li>
-                    <li>Public Speaking</li>
-                </ul>
-                </h3>
-                <h2 class='margin'>Other Interests</h2>
-                <hr class="left-col-underline no-dip-underline"/>
-                <h3>
-                <ul>
-                    <li>Greek/Roman History</li>
-                    <li>Photography</li>
-                    <li>Cooking</li>
-                </ul>
-                </h3>
+            <div class='grid-name-container'>
+                <h1 class="name">Chris<br>Drymon</h1>
+                <div class="grid-icon-container">
+                    <div class='right button-holder'><a href="{{ url_for('home_bp.static', filename='DrymonResume.pdf') }}"><button class="btn">PDF<i class="fa fa-download"></i></button></a>
+                        <a href="{{ url_for('home_bp.static', filename='DrymonResume.docx') }}"><button class="btn">Doc <i class="fa fa-download"></i></button></a></div>
+                    <div><a href="https://www.linkedin.com/in/chrisdrymon/" target="_blank"><i class="fa fa-linkedin icon-links right" aria-hidden="true"></i></a></div>
+                    <div><a href="https://github.com/chrisdrymon" target="_blank"><i class="fa fa-github icon-links right" aria-hidden="true"></i></a></div>
+                </div>
             </div>
+            <h3 class='subtitle'>Software Engineer</h3>
+            <div class='mobile-only-block'><a href="{{ url_for('home_bp.static', filename='DrymonResume.pdf') }}"><button class="btn top-right">PDF <i class="fa fa-download"></i></button></a>
+                                           <a href="{{ url_for('home_bp.static', filename='DrymonResume.docx') }}"><button class="btn top-right">Doc <i class="fa fa-download"></i></button></a></div>
+            <h2 class="sub-head">General Info</h2>
+            <div class='general-info-columns'>
+                <h3 class='no-mobile-block'>Location</h3><h3>Kansas City, MO</h3>
+                <h3 class='no-mobile-block'>E-Mail</h3><h3>chrisdrymon@yahoo.com</h3>
+                <h3 class='no-mobile-block'>Phone</h3><h3>205.394.9808</h3>
+                <h3 class='mobile-only-block'><a href="https://www.linkedin.com/in/chrisdrymon/" target="_blank">LinkedIn</a></h3>
+                <h3 class='mobile-only-block'><a href="https://github.com/chrisdrymon" target="_blank">GitHub</a></h3>
+            </div>
+            <h2 class="sub-head">Proficiencies</h2>
+            <h3>Python</h3>
+                <ul>
+                    <li>Data Structures</li>
+                    <li>Algorithms</li>
+                </ul>
+            <h3>Natural Language Processing</h3>
+                <ul>
+                    <li>Classical Language Toolkit</li>
+                    <li>Natural Language Toolkit</li>
+                    <li>Gensim</li>
+                    <li>Stanza</li>
+                    <li>SpaCy</li>
+                </ul>
+            <h3>Machine Learning</h3>
+                <ul>
+                    <li>Tensorflow</li>
+                    <li>Keras API</li>
+                    <li>Estimator API</li>
+                </ul>
+            <h3>Data Processing</h3>
+                <ul>
+                    <li>NumPy</li>
+                    <li>Pandas</li>
+                </ul>
+            <h3>Data Visualization</h3>
+                <ul>
+                    <li>Plotly</li>
+                    <li>Dash</li>
+                </ul>
+            <h3>Web Development</h3>
+                <ul>
+                    <li>Flask</li>
+                    <li>HTML</li>
+                    <li class="last-li-item">CSS</li>
+                </ul>
         </div>
-        <div class="column column-right">
-            <div class="mobile-two">
-                <h2 class="mobile-margin">Coding Projects</h2>
-                <hr class="underline"/>
-                <h1>AnGEL Tagger <span class="fake-h4"><a class='project-links' href="https://pypi.org/project/angel-tag/" target="_blank">Pip Package</a>
-                    <a class='project-links' href="https://github.com/chrisdrymon/angel" target="_blank">GitHub</a>
-                    </span></h1>
-                <h3><ul><li>Tags Ancient Greek parts-of-speech through a series of neural networks</li>
-                        <li>State of the art 95.5% accuracy significantly outperforms the previous SotA held by the Alan Turing Institute at Cambridge</li></ul></h3>
-                <h1>Ancient Greek & English Semantic Domains Visualizer <span class="fake-h4"><a class='project-links' href="semdoms" target="_blank">Web App</a>
-                    <a class='project-links' href="https://github.com/chrisdrymon/sem-dom-visualizer" target="_blank">GitHub</a></span></h1>
-                <h3><ul><li>Traverses a tree structure to gather node information and return an interactive hierarchy of semantic domains</li>
-                    <li>Translates English nouns into Ancient Greek equivalents</li></ul></h3>
-                <h1>WoW Combat Sim <span class="fake-h4"><a class='project-links' href="wowsim" target="_blank">Web App</a>
-      		        <a class='project-links' href="https://github.com/chrisdrymon/BFADiscSim" target="_blank">GitHub</a></span></h1>
-                <h3><ul><li>Merges and assesses timelines to simulate World of Warcraft combat</li><li>Allows users to optimize gearing and stat choices</li></ul></h3>
-                <h1>Hearthstone Bidder <span class="fake-h4"><a class='project-links' href="https://github.com/chrisdrymon/KrippTF" target="_blank">GitHub</a></span></h1>
-                <h3><ul><li>Assesses a player's arena deck through neural networks and suggests an optimal betting strategy</li>
-                    <li>Quickly ascended to the top 10% of currency holders</li></ul></h3>
+        <div class="mobile-three">
+            <h2 class="sub-head">Soft Skills</h2>
+            <ul>
+                <li>Leadership Experience</li>
+                <li>Problem-Solving</li>
+                <li>Public Speaking</li>
+            </ul>
+            <h2 class="sub-head">Other Interests</h2>
+            <ul>
+                <li>Greek/Roman History</li>
+                <li>Photography</li>
+                <li>Cooking</li>
+            </ul>
+        </div>
+    </div>
+    <div class="column column-right">
+        <div class="mobile-two">
+            <h2>Coding Projects</h2>
+            <h1>AnGEL Tagger <span class="fake-h4"><a class='project-links' href="https://pypi.org/project/angel-tag/" target="_blank">Pip Package</a>
+                <a class='project-links' href="https://github.com/chrisdrymon/angel" target="_blank">GitHub</a>
+                </span></h1>
+            <ul><li>Tags Ancient Greek parts-of-speech through a series of neural networks</li>
+                    <li>State of the art 95.5% accuracy significantly outperforms the previous SotA held by the Alan Turing Institute at Cambridge</li></ul>
+            <h1>Ancient Greek & English Semantic Domains Visualizer <span class="fake-h4"><a class='project-links' href="semdoms" target="_blank">Web App</a>
+                <a class='project-links' href="https://github.com/chrisdrymon/sem-dom-visualizer" target="_blank">GitHub</a></span></h1>
+            <ul><li>Traverses a tree structure to gather node information and return an interactive hierarchy of semantic domains</li>
+                <li>Translates English nouns into Ancient Greek equivalents</li></ul>
+            <h1>WoW Combat Sim <span class="fake-h4"><a class='project-links' href="wowsim" target="_blank">Web App</a>
+                <a class='project-links' href="https://github.com/chrisdrymon/BFADiscSim" target="_blank">GitHub</a></span></h1>
+            <ul><li>Merges and assesses timelines to simulate World of Warcraft combat</li><li>Allows users to optimize gearing and stat choices</li></ul>
+            <h1>Hearthstone Bidder <span class="fake-h4"><a class='project-links' href="https://github.com/chrisdrymon/KrippTF" target="_blank">GitHub</a></span></h1>
+            <ul><li>Assesses a player's arena deck through neural networks and suggests an optimal betting strategy</li>
+                <li>Quickly ascended to the top 10% of currency holders</li></ul>
 
-                <h2 class="sub-head mobile-margin">Education</h2>
-                <hr class="underline"/>
-                <h1>Th.M. Theology<span class='right'>2020</span></h1>
-                <h3 class='thesis'>Thesis: A Computational Linguistic Method for Word Sense Disambiguation Applied to Three Debated Passages</h3>
-                <h3>Midwestern Baptist Theological Seminary</h3>
-                <h1>M.A. Biblical Languages<span class='right'>2015</span></h1>
-                <h3>Midwestern Baptist Theological Seminary</h3>
-                <h2 class="sub-head mobile-margin">Work Experience</h2>
-                <hr class="underline"/>
-                <h1>Freelance Developer<span class='right'>2018-2021</span></h1>
-                <h3 class='thesis'>Kansas City, MO</h3>
-                <h3><ul>
-                    <li>Python development primarily aimed at NLP</li>
-                    <li>Contributor to Ancient Greek treebank databases</li>
-                    <li>Create open source software for New Testament research</li></ul></h3>
-                <h1>Associate Pastor<span class='right'>2018-2019</span></h1>
-                <h3 class='thesis'>Graceway Fellowship, Green Bay, WI</h3>
-                <h3><ul>
-                    <li>Directed children's, youth, and family ministries</li>
-                    <li>Frequently communicated with large crowds</li>
-                    <li>Formed and trained teams of volunteer helpers</li>
-                    <li>Led church to its first year of growth in a decade</li></ul></h3>
-                <h1>Owner/Photographer<span class='right'>2014-2018</span></h1>
-                <h3 class='thesis'>IY Photography, Kansas City, MO</h3>
-                <h3><ul>
-                    <li>Photographed portraits and weddings</li>
-                    <li>Edited photos on photoshop; printed on professional printer</li>
-                    <li>Delivered photos through cloud services</li>
-                </ul></h3>
-            </div>
+            <h2 class="sub-head">Education</h2>
+            <h1>Th.M. Theology<span class='right'>2020</span></h1>
+            <h3 class="thesis">Thesis: A Computational Linguistic Method for Word Sense Disambiguation Applied to Three Debated Passages</h3>
+            <h3 class="location">Midwestern Baptist Theological Seminary</h3>
+            <h1 class="mabl">M.A. Biblical Languages<span class='right'>2015</span></h1>
+            <h3 class="location">Midwestern Baptist Theological Seminary</h3>
+            <h2 class="sub-head">Work Experience</h2>
+            <h1>Freelance Developer<span class='right'>2018-2021</span></h1>
+            <h3 class="location">Kansas City, MO</h3>
+            <ul>
+                <li>Python development primarily aimed at NLP</li>
+                <li>Contributor to Ancient Greek treebank databases</li>
+                <li>Create open source software for New Testament research</li></ul>
+            <h1>Associate Pastor<span class='right'>2018-2019</span></h1>
+            <h3 class="location">Graceway Fellowship, Green Bay, WI</h3>
+            <ul>
+                <li>Directed children's, youth, and family ministries</li>
+                <li>Frequently communicated with large crowds</li>
+                <li>Formed and trained teams of volunteer helpers</li>
+                <li class="last-li-item">Led church to its first year of growth in a decade</li></ul>
         </div>
     </div>
 </body>
