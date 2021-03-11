@@ -53,7 +53,6 @@ table {
 }
 
 /* Color Variables */
-/* Mixins */
 /* When Screen Width is Less Than 600px */
 a {
   color: #c1a57b;
@@ -67,7 +66,7 @@ body {
   margin: 0px 3px;
 }
 
-h1, h2, h3, h4, h5, ul, li {
+h1, h2, h3, h4, ul, li {
   color: #40424a;
   font-weight: 600;
 }
@@ -80,12 +79,6 @@ h1, h3, ul, li {
 h2 {
   font-size: 5.5vw;
   margin-top: 20px;
-}
-
-h5 {
-  font-size: 1.5em;
-  margin: 30px 5px;
-  color: #40424a;
 }
 
 img {
@@ -112,27 +105,12 @@ ul {
   font-weight: 600;
 }
 
-.coding-projects-underline {
-  margin: 0;
-  width: 42%;
-}
-
 .column {
   display: contents;
 }
 
-.education-underline {
-  margin: 0;
-  width: 27%;
-}
-
 .fake-h4 {
-  font-size: 0.7em;
-}
-
-.gen-info-underline {
-  margin: 0;
-  width: 33%;
+  font-size: 3.8vw;
 }
 
 .grid-icon-container {
@@ -173,33 +151,13 @@ ul {
   display: none;
 }
 
-.other-interests-underline {
-  margin: 0;
-  width: 40%;
-}
-
-.proficiencies-underline {
-  margin: 0;
-  width: 33%;
-}
-
 .right {
   float: right;
-}
-
-.soft-skills-underline {
-  margin: 0;
-  width: 26%;
 }
 
 .thesis {
   font-size: 4vw;
   color: #c1a57b;
-}
-
-.work-underline {
-  margin: 0;
-  width: 45%;
 }
 
 @media only screen and (min-width: 600px) {
@@ -217,6 +175,7 @@ ul {
 
   h2 {
     font-size: 3vw;
+    font-weight: 800;
   }
 
   h3, ul, li {
@@ -275,12 +234,7 @@ ul {
   }
 
   .fake-h4 {
-    font-size: 0.5em;
-  }
-
-  .gen-info-underline {
-    margin: 0;
-    width: 52%;
+    font-size: 2vw;
   }
 
   .general-info-columns {
@@ -290,7 +244,7 @@ ul {
 
   .grid-icon-container {
     display: grid;
-    padding-bottom: 1.2rem;
+    padding-bottom: 1.7vw;
     grid-template-rows: auto auto auto;
     justify-content: space-evenly;
     align-items: center;
@@ -299,7 +253,7 @@ ul {
   .grid-name-container {
     display: grid;
     grid-template-columns: 5fr 1fr;
-    margin-top: 1.2rem;
+    margin-top: 1.2vw;
   }
 
   .icon-links {
@@ -336,22 +290,16 @@ ul {
     display: block;
   }
 
-  .other-interests-underline {
-    margin: 0;
-    width: 63%;
-  }
-
-  .proficiencies-underline {
-    margin: 0;
-    width: 51%;
-  }
-
   .project-links {
     color: #c1a57b;
   }
 
   .right {
     float: right;
+  }
+
+  .right-sub-head {
+    font-size: 3.5vw;
   }
 
   .section-title {
@@ -362,13 +310,8 @@ ul {
     margin-bottom: 20px;
   }
 
-  .soft-skills-underline {
-    margin: 0;
-    width: 41%;
-  }
-
   .sub-head {
-    margin-top: 2rem;
+    margin-top: 4vw;
   }
 
   .subtitle {
@@ -386,28 +329,25 @@ ul {
   .top-right {
     float: right;
   }
-
-  .underline {
-    width: 40%;
-  }
 }
 @media only screen and (min-width: 1600px) {
   h1 {
-    font-size: 3.8rem;
+    font-size: 3.3vw;
     margin: 50px 0px 10px 0px;
   }
 
   h2 {
-    font-size: 3em;
+    font-size: 3vw;
+    font-weight: 800;
   }
 
   h3 {
-    font-size: 2em;
+    font-size: 2vw;
     margin: 5px 0px;
   }
 
   h5 {
-    font-size: 1.5em;
+    font-size: 1.5vw;
     margin: 30px 5px;
     color: #40424a;
   }
@@ -419,17 +359,17 @@ ul {
   }
 
   .btn {
-    width: 100px;
+    width: 6vw;
     color: #dfe8e9;
     background: #30475e;
-    font-size: 1.2em;
+    font-size: 1.3vw;
     border: none;
     padding: 10px;
     cursor: pointer;
   }
 
   .button-holder {
-    width: 350px;
+    width: 15vw;
     text-align: right;
   }
 
@@ -448,17 +388,12 @@ ul {
   }
 
   .fake-h4 {
-    font-size: 0.5em;
+    font-size: 1.7vw;
   }
 
   .general-info-columns {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-  }
-
-  .gen-info-underline {
-    margin: 0;
-    width: 43%;
+    grid-template-columns: 1.3fr 3fr;
   }
 
   .grid-container {
@@ -469,7 +404,7 @@ ul {
 
   .grid-icon-container {
     display: grid;
-    padding-bottom: 1.2rem;
+    padding-bottom: 1.2vw;
     grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
   }
@@ -480,19 +415,11 @@ ul {
   }
 
   .icon-links {
-    font-size: 2em;
+    font-size: 2.5vw;
   }
 
   .image-container {
     width: auto;
-  }
-
-  .left-col-underline {
-    width: 45%;
-  }
-
-  .margin {
-    margin: 70px 0px 0px 0px;
   }
 
   .mobile-only-block {
@@ -500,21 +427,15 @@ ul {
   }
 
   .name {
-    font-size: 5rem;
-  }
-
-  .no-dip-underline {
-    margin-top: 0px;
-    margin-bottom: 20px;
+    font-size: 5vw;
   }
 
   .no-mobile-block {
     display: block;
   }
 
-  .proficiencies-underline {
-    margin: 0;
-    width: 42%;
+  .pro-sub-list {
+    margin-bottom: 1vw;
   }
 
   .project-links {
@@ -523,6 +444,10 @@ ul {
 
   .right {
     float: right;
+  }
+
+  .right-sub-head {
+    margin-bottom: -10px;
   }
 
   .section-title {

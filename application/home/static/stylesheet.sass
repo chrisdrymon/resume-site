@@ -8,11 +8,6 @@ $light-blue:    #ececec
 $white:         #dfe8e9
 $gold:          #c1a57b
 
-/* Mixins */
-
-@mixin reset-underline
-    margin: 0
-
 
 /* When Screen Width is Less Than 600px */
 
@@ -26,7 +21,7 @@ body
     grid-template-rows: auto auto auto
     margin: 0px 3px
 
-h1, h2, h3, h4, h5, ul, li
+h1, h2, h3, h4, ul, li
     color: $black
     font-weight: 600
 
@@ -37,11 +32,6 @@ h1, h3, ul, li
 h2
     font-size: 5.5vw
     margin-top: 20px
-
-h5
-    font-size: 1.5em
-    margin: 30px 5px
-    color: $black
 
 img
     max-width: 100%
@@ -63,23 +53,11 @@ ul
     font-family: 'Josefin Sans'
     font-weight: 600
 
-.coding-projects-underline
-    @include reset-underline
-    width: 42%
-
 .column
     display: contents
 
-.education-underline
-    @include reset-underline
-    width: 27%
-
 .fake-h4
-    font-size: 0.7em
-
-.gen-info-underline
-    @include reset-underline
-    width: 33%
+    font-size: 3.8vw
 
 .grid-icon-container
     display: none
@@ -110,28 +88,12 @@ ul
 .no-mobile-block
     display: none
 
-.other-interests-underline
-    @include reset-underline
-    width: 40%
-
-.proficiencies-underline
-    @include reset-underline
-    width: 33%
-
 .right
     float: right
-
-.soft-skills-underline
-    @include reset-underline
-    width: 26%
 
 .thesis
     font-size: 4vw
     color: $gold
-
-.work-underline
-    @include reset-underline
-    width: 45%
 
 
 @media only screen and (min-width: 600px)
@@ -148,6 +110,7 @@ ul
 
     h2
         font-size: 3vw
+        font-weight: 800
 
     h3, ul, li
         font-size: 2vw
@@ -175,7 +138,7 @@ ul
         color: $white
         background: $dark-blue
         border: none
-        font-size:1.2vw
+        font-size: 1.2vw
         padding: 10px
         cursor: pointer
 
@@ -195,11 +158,7 @@ ul
         background: white
 
     .fake-h4
-        font-size: 0.5em
-
-    .gen-info-underline
-        @include reset-underline
-        width: 52%
+        font-size: 2vw
 
     .general-info-columns
         display: grid
@@ -207,7 +166,7 @@ ul
 
     .grid-icon-container
         display: grid
-        padding-bottom: 1.2rem
+        padding-bottom: 1.7vw
         grid-template-rows: auto auto auto
         justify-content: space-evenly
         align-items: center
@@ -215,7 +174,7 @@ ul
     .grid-name-container
         display: grid
         grid-template-columns: 5fr 1fr
-        margin-top: 1.2rem
+        margin-top: 1.2vw
 
     .icon-links
         font-size: 2vw
@@ -243,19 +202,14 @@ ul
     .no-mobile-block
         display: block
 
-    .other-interests-underline
-        @include reset-underline
-        width: 63%
-
-    .proficiencies-underline
-        @include reset-underline
-        width: 51%
-
     .project-links
         color: $gold
 
     .right
         float: right
+
+    .right-sub-head
+        font-size: 3.5vw
 
     .section-title
         width: 50%
@@ -264,12 +218,8 @@ ul
         border-style: solid
         margin-bottom: 20px
 
-    .soft-skills-underline
-        @include reset-underline
-        width: 41%
-
     .sub-head
-        margin-top: 2rem
+        margin-top: 4vw
 
     .subtitle
         display: block
@@ -284,25 +234,23 @@ ul
     .top-right
         float: right
 
-    .underline
-        width: 40%
-
 
 @media only screen and (min-width: 1600px) 
 
     h1
-        font-size: 3.8rem
+        font-size: 3.3vw
         margin: 50px 0px 10px 0px
 
     h2
-        font-size: 3em
+        font-size: 3vw
+        font-weight: 800
 
     h3
-        font-size: 2em
+        font-size: 2vw
         margin: 5px 0px
 
     h5
-        font-size: 1.5em
+        font-size: 1.5vw
         margin: 30px 5px
         color: $black
 
@@ -312,16 +260,16 @@ ul
         border-top: 1px solid $black
 
     .btn
-        width: 100px
+        width: 6vw
         color: $white
         background: $dark-blue
-        font-size:1.2em
+        font-size: 1.3vw
         border: none
         padding: 10px
         cursor: pointer
 
     .button-holder
-        width: 350px
+        width: 15vw
         text-align: right
 
     .column
@@ -336,15 +284,11 @@ ul
         background: white
 
     .fake-h4
-        font-size: 0.5em
+        font-size: 1.7vw
 
     .general-info-columns
         display: grid
-        grid-template-columns: 1fr 3fr
-
-    .gen-info-underline
-        @include reset-underline
-        width: 43%
+        grid-template-columns: 1.3fr 3fr
 
     .grid-container
         display: grid
@@ -353,7 +297,7 @@ ul
 
     .grid-icon-container
         display: grid
-        padding-bottom: 1.2rem
+        padding-bottom: 1.2vw
         grid-template-rows: 1fr 1fr 1fr
         align-items: center
 
@@ -362,39 +306,31 @@ ul
         grid-template-columns: 5fr 1fr
 
     .icon-links
-        font-size: 2em
+        font-size: 2.5vw
 
     .image-container
         width: auto
-
-    .left-col-underline
-        width: 45%
-
-    .margin
-        margin: 70px 0px 0px 0px
 
     .mobile-only-block
         display: none
 
     .name
-        font-size: 5rem
-
-    .no-dip-underline
-        margin-top:0px
-        margin-bottom: 20px
+        font-size: 5vw
 
     .no-mobile-block
         display: block
 
-    .proficiencies-underline
-        @include reset-underline
-        width: 42%
+    .pro-sub-list
+        margin-bottom: 1vw
 
     .project-links
         color: $gold
 
     .right
         float: right
+
+    .right-sub-head
+        margin-bottom: -10px
 
     .section-title
         width: 50%
